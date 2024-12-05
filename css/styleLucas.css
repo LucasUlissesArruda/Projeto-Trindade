@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'Eastman Grotesque Alt Light';
+  src: url('../fonts/Eastman-Grotesque-Alt-Light-trial.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.carousel-caption {
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+html,
+body {
+  text-decoration: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cont {
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: left;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+#checkbox-menu {
+  position: absolute;
+  opacity: 0;
+}
+
+label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 30px;
+}
+
+label span {
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  background: #89745a;
+  transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+  top: 0;
+}
+
+label span:nth-child(2) {
+  top: 8px;
+}
+
+label span:nth-child(3) {
+  top: 16px;
+}
+
+#checkbox-menu:checked+label span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+#checkbox-menu:checked+label span:nth-child(2) {
+  opacity: 0;
+}
+
+#checkbox-menu:checked+label span:nth-child(3) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+/* Menu inicial escondido e com transição */
+#menu {
+  display: flex;
+  position: absolute;
+  left: 70px;
+  top: 39.5px;
+  width: 0;
+  opacity: 0;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+/* Alinhamento das opções do menu */
+#menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+#menu ul li {
+  margin: 0 10px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: hsl(33, 100%, 88%);
+  font-weight: bold;
+  font-size: 19px;
+  font-family: 'Eastman Grotesque Alt Light', sans-serif;
+  /* Aumenta o tamanho da fonte */
+}
+
+/* Quando o menu estiver checado, ele se expande */
+#checkbox-menu:checked~#menu {
+  width: 300px;
+  /* Tamanho do menu quando aberto */
+  opacity: 1;
+}
+
+.encontro {
+  margin-left: 100px;
+  align-items: top;
+  margin-top: 100px;
+  font-size: 35px;
+  font-family: 'Eastman Grotesque Alt Light', sans-serif;
+}
+
+span {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.Trindade {
+  margin-left: 200px;
+  align-items: top;
+  margin-top: 100px;
+  font-size: 35px;
+  color: #89745a;
+  font-family: 'Eastman Grotesque Alt Light', sans-serif;
+  font-weight: bold;
+}
+
+.img1 {
+  width: 80px;
+  align-items: center;
+}
+
+/* Estilos do ícone com fundo */
+.img {
+  float: right;
+  margin-right: 60px;
+  position: fixed;
+  right: 0;
+  width: 35px;
+  padding: 10px;
+  /* Adiciona espaçamento ao redor do ícone */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fundo semi-transparente */
+  border-radius: 50%;
+  /* Faz o fundo ser circular */
+}
+
+.secp1 {
+  align-items: center;
+}
+
+/* Estilos do Pop-Up */
+.popup-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 250px; /* Diminuído o tamanho */
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: none; /* Inicialmente oculto */
+  z-index: 1000; /* Garante que fica sobre outros elementos */
+}
+
+.popup {
+  padding: 15px;
+  position: relative;
+}
+
+.popup p {
+  font-size: 14px;
+  color: #333;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #aaa;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+
+
+
+
+.secp2 {
+  height: 100vh;
+  background-color: #f8f1e8;
+  /* 100% da altura da viewport */
+}
+
+.imoveis {
+  text-align: center;
+  color: #89745a;
+  font-family: 'Eastman Grotesque Alt Light', sans-serif;
+}
+
+
+.carroseis{
+  max-height: 500px !important;
+  /* Define a altura máxima da imagem com maior prioridade */
+  object-fit: cover !important;
+  /* Ajusta a imagem para preencher o contêiner */
+  width: 100% !important;
+  max-height: 500px;
+  /* Define a altura máxima da imagem */
+  object-fit: cover;
+  /* Ajusta a imagem para preencher o contêiner */
+  width: 100%;
+  /* Mantém a largura responsiva */
+}
+
+.secp3 {
+  height: 100vh;
+  background-color: #f8f1e8;
+  /* 100% da altura da viewport */
+}
