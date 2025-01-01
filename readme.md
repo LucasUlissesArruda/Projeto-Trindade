@@ -23,3 +23,4 @@ O projeto foi criado para ser uma solução prática e funcional para corretoras
 2. Configure o banco de dados utilizando o arquivo SQL disponibilizado.  
 3. Configure o ambiente local (XAMPP, WAMP ou similar).  
 4. Acesse o sistema pelo navegador através do localhost.
+
